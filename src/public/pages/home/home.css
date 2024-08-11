@@ -1,0 +1,194 @@
+   html {
+    scroll-behavior: smooth;
+  }
+  body, html {
+    overflow: auto; /* Prevents scrolling */
+}
+  #homeNavbar {
+    background: rgba(45, 153, 189, 0.8);
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  #homeNavbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  #logoName {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  #logoName img {
+    margin-right: 10px;
+  }
+  
+  #navLinks {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  #navLinks a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    box-shadow: inset 0 0 0 0 #0c356f;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  
+  #navLinks a:hover {
+    color: #fff;
+    padding: 5px;
+    box-shadow: inset 100px 0 0 0 #0e3588;
+    border-radius: 30px;
+  }
+  
+  #signoutDropdown {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    #homeNavbarContainer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #navLinks {
+      flex-direction: column;
+      margin-right: 0;
+    }
+  
+    #navLinks a {
+      margin: 5px 0;
+      font-size: 0.9rem;
+    }
+  
+    #signoutDropdown {
+      margin-top: 10px;
+    }
+  }
+  
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 40px 20px;
+     background-color: #f4f4f4; /* Slightly different background color for sections  */
+  }
+  .section > div {
+    background: rgb(221, 218, 218);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 10px 10px 22px 8px rgba(67, 65, 65, 0.75);
+    padding: 20px;
+    max-width: 950px;
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 20px;
+  }
+  .section li{
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+  #aboutUs p{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  div > button{
+    color: #fff;
+    background: #0e3588;
+    border-radius: 40px;
+    transition: background 0.3s;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: #fff;
+    box-shadow: 4px 4px 8px rgba(5, 5, 5, 0.421);
+  }
+  div > button:hover {
+    background-color: #fff; /* change to your desired color */
+    color: #0e3588; /* change to your desired color */
+  }
+  div > form{
+    text-align: left;
+  }
+  form > .div1{
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  form > .div2{
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+  form > .div3{
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+ #name,#email {
+    padding-left: 200px;
+    margin-left: 50px;
+  }
+  #message{
+    margin-left: 25px;
+  }
+  form > button{
+    margin-top: 35Px;
+    margin-left: 45%;
+    color: #fff;
+    background: #0e3588;
+    border-radius: 40px;
+    transition: background 0.3s;
+    border: #fff;
+    padding: 10px 20px;
+    box-shadow: 4px 4px 8px rgba(5, 5, 5, 0.421);
+}
+form > button:hover{
+    background-color: #fff; /* change to your desired color */
+    color: #0e3588; /* change to your desired color */
+}
+  @media (max-width: 768px) {
+    .section {
+      padding: 20px 10px;
+    }
+  
+    .section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .section p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section h2 {
+      font-size: 1.2rem;
+    }
+  
+    .section p {
+      font-size: 0.8rem;
+    }
+  } 
